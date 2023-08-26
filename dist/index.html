@@ -16,40 +16,52 @@
             <div class="flex items-center justify-between">
                 <div class="flex  items-center">
                     <img src="./images/site-logo.png" alt="site-logo">
-                    <ul class="flex ml-14 gap-11">
+                    <ul id="Nav"
+                        class="flex flex-col  gap-11 absolute top-0 left-[-100%] w-full h-screen bg-black text-white items-center justify-center lg:ml-14 lg:static lg:flex-row lg:bg-inherit lg:w-auto lg:h-full lg:text-black">
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Products</a></li>
                         <li><a href="">Sales</a></li>
+                        <li><a class="md:hidden" href="">Log In</a></li>
+                        <li><a class=" text-sm font-medium bg-[#BD0004] text-white py-3 px-5 md:hidden" href="">Sign
+                                Up</a></li>
                     </ul>
                 </div>
+                <button onclick="openNav()" class="lg:hidden text-red-600 z-10">open</button>
                 <div>
                     <ul class="flex gap-10">
                         <li><a href=""><img src="./images/search-icon.png" alt="search-btn"></a></li>
                         <li><a href=""><img src="./images/bag-icon.png" alt="bag-btn"></a></li>
-                        <li><a href="">Log In</a></li>
-                        <li><a class="text-sm font-medium bg-[#BD0004] text-white py-3 px-5" href="">Sign Up</a></li>
+                        <li><a class="hidden lg:block" href="">Log In</a></li>
+                        <li><a class="text-sm hidden font-medium bg-[#BD0004] text-white py-3 px-5 lg:block"
+                                href="">Sign Up</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- nav -->
         <!-- hero-section -->
-        <section
-            class="flex-grow flex justify-center items-center h-screen bg-contain bg-no-repeat bg-[url('./images/hero-img.png')]">
+        <section class="flex-grow flex items-baseline pt-2 md:pt-16 h-screen bg-contain bg-no-repeat bg-[url('./images/hero-img.png')] lg:justify-center
+            lg:items-center ">
             <div class="container mx-auto px-4">
                 <div class="flex">
                     <div class="w-1/2">
-                        <h1 class="text-7xl font-bold">Vehicula <span class="text-[#BD0004]">tellus ipsum</span> arcu
+                        <h1 class="text-xl md:text-[2.5rem] md:leading-10 font-bold lg:text-7xl">Vehicula <span
+                                class="text-[#BD0004]">tellus ipsum</span>
+                            arcu
                             viverra</h1>
-                        <p class="text-2xl font-normal pt-11 pr-36">Feugiat quis et platea nunc. Enim, a donec odio
+                        <p class="text-xs md:text-lg pt-4 font-normal lg:pt-11 lg:pr-36 lg:text-2xl">Feugiat quis et
+                            platea nunc. Enim, a donec
+                            odio
                             ullamcorper mauris penatibus et.</p>
-                        <div class="flex items-center gap-8 pt-16">
-                            <button class="bg-[#BD0004] flex gap-3 items-center text-white py-4 pl-6 text-xl">Shop Now
+                        <div class="flex items-center gap-3 sm:gap-8 pt-5 lg:pt-16">
+                            <button
+                                class="bg-[#BD0004] flex gap-3 items-center text-white text-[10px] py-2 sm:text-base  sm:py-2 sm:px-3 lg:py-4 lg:pl-6 lg:text-xl">Shop
+                                Now
                                 <span class="pr-6">
                                     <img src="./images/arrow_white.png" alt="arrow">
                                 </span> </button>
-                            <a href="">See Collections</a>
+                            <a class="text-xs sm:text-lg" href="">See Collections</a>
                         </div>
                     </div>
                 </div>
@@ -60,9 +72,32 @@
     <!-- section 2 Start -->
     <section>
         <div class="container mx-auto px-4">
-            <h2 class="text-center text-5xl font-normal">What do you want to order?</h2>
+            <h2 class="text-center text-xl lg:text-5xl font-normal">What do you want to order?</h2>
             <div class="flex gap-9 py-14">
-                <div class="w-4/12">
+                <div class="w-full sm:w-1/2 lg:w-4/12">
+                    <img class="h-[500px] w-full" src="./images/order-img-1.png" alt="jewellery">
+                    <div class="bg-[#F4F4F4] ps-4 pt-4 hover:bg-white">
+                        <div class="flex gap-24 md:gap-40 pb-7">
+                            <div>
+                                <h1 class="text-xl font-normal">Lorem ipsum dolor</h1>
+                                <p class="text-base font-light text-[#767676] pt-3">Praesent volutpat libero vitae sem
+                                </p>
+                            </div>
+                            <div class="">
+                                <h1 class="text-[#FF9900] text-xs">€ 5.99</h1>
+                                <h1 class="text-[#767676] text-xs pt-3">€ 8.99</h1>
+                            </div>
+                        </div>
+                        <div class="pb-5">
+                            <button
+                                class="flex items-center gap-5 text-[#BD0004] border-[#BD0004] border-2 text-xs py-2 px-3 lg:py-4 lg:px-6 lg:text-lg font-normal hover:bg-[#BD0004] hover:text-white">Complile
+                                this one
+                                <span><img src="./images/arrow_red.png" alt=""></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/2 hidden sm:block lg:w-4/12">
                     <img class="h-[500px] w-full" src="./images/order-img-1.png" alt="jewellery">
                     <div class="bg-[#F4F4F4] ps-4 pt-4 hover:bg-white">
                         <div class="flex gap-40 pb-7">
@@ -85,30 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-4/12">
-                    <img class="h-[500px] w-full" src="./images/order-img-1.png" alt="jewellery">
-                    <div class="bg-[#F4F4F4] ps-4 pt-4 hover:bg-white">
-                        <div class="flex gap-40 pb-7">
-                            <div>
-                                <h1 class="text-xl font-normal">Lorem ipsum dolor</h1>
-                                <p class="text-base font-light text-[#767676] pt-3">Praesent volutpat libero vitae sem
-                                </p>
-                            </div>
-                            <div class="">
-                                <h1 class="text-[#FF9900]">€ 5.99</h1>
-                                <h1 class="text-[#767676] pt-3">€ 8.99</h1>
-                            </div>
-                        </div>
-                        <div class="pb-5">
-                            <button
-                                class="flex items-center gap-5 text-[#BD0004] border-[#BD0004] border-2 py-4 px-6 text-lg font-normal hover:bg-[#BD0004] hover:text-white">Complile
-                                this one
-                                <span><img src="./images/arrow_red.png" alt=""></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-4/12 hover:shadow-[0px 10px 30px 0px rgba(0, 0, 0, 0.15)]">
+                <div class="w-4/12 hidden lg:block hover:shadow-[0px 10px 30px 0px rgba(0, 0, 0, 0.15)]">
                     <img class="h-[500px] w-full" src="./images/order-img-1.png" alt="jewellery">
                     <div class="bg-[#F4F4F4] ps-4 pt-4 hover:bg-white">
                         <div class="flex gap-40 pb-7">
@@ -136,135 +148,230 @@
     </section>
     <!-- section 2 End -->
     <!-- section 3 start -->
-    <section>
+    <section class="py-6">
         <div class="container mx-auto px-4">
-            <h1 class="text-center text-5xl font-normal pb-16">Loose Charms</h1>
+            <h2 class="text-center text-5xl font-normal pb-16">Loose Charms</h2>
             <div class="flex flex-wrap">
-                <div class="w-1/5 pb-6">
-                    <div class="box relative h-[270px] w-[300px] flex">
-                        <img  src="./images/loose-img-1.png" alt="jewellery">
-                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                <div class="w-1/2 sm:w-1/3 lg:w-1/5 pr-4">
+                    <div class="relative box">
+                        <img class="relative min-w-full" src="./images/loose-img-1.png" alt="#">
+                        <p class="absolute bottom-2 left-[3%] font-sans font-normal text-xl content">€ 5.99</p>
                         <button
-                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
-                        <div
-                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
-                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                            class="absolute btn bottom-2 right-[3%] border-2 font-sans font-normal text-[#bd0004] border-[#bd0004] hover:hidden px-5 py-1">Add</button>
+                        <div class="absolute  top-0 start-0 w-full h-[251px] bg-[#3b3b3b] opacity-0 hover:opacity-90">
+                            <div class="text-center mt-[30%]">
+                                <p class="font-normal font-sans text-white text-xl">Lorem ipsum dolor sit amet.</p>
+                                <p class="font-normal font-sans text-[#f90] text-xl mt-5">€ 5.99</p>
+                                <button
+                                    class="font-normal font-sans text-base text-white bg-[#bd0004] px-8 mt-9 py-2">Add</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/5 pb-6">
-                    <div class="box relative h-[270px] w-[300px] flex">
-                        <img  src="./images/loose-img-1.png" alt="jewellery">
-                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                <div class="w-1/2 sm:w-1/3 lg:w-1/5 pr-4">
+                    <div class="relative box">
+                        <img class="relative min-w-full" src="./images/loose-img-1.png" alt="#">
+                        <p class="absolute bottom-2 left-[3%] font-sans font-normal text-xl content">€ 5.99</p>
                         <button
-                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
-                        <div
-                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
-                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                            class="absolute btn bottom-2 right-[3%] border-2 font-sans font-normal text-[#bd0004] border-[#bd0004] hover:hidden px-5 py-1">Add</button>
+                        <div class="absolute  top-0 start-0 w-full h-full bg-[#3b3b3b] opacity-0 hover:opacity-90">
+                            <div class="text-center mt-[30%]">
+                                <p class="font-normal font-sans text-white text-xl">Lorem ipsum dolor sit amet.</p>
+                                <p class="font-normal font-sans text-[#f90] text-xl mt-5">€ 5.99</p>
+                                <button
+                                    class="font-normal font-sans text-base text-white bg-[#bd0004] px-8 mt-9 py-2">Add</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/5 pb-6">
-                    <div class="box relative h-[270px] w-[300px] flex">
-                        <img  src="./images/loose-img-1.png" alt="jewellery">
-                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                <div class="w-1/2 sm:w-1/3 lg:w-1/5 pr-4">
+                    <div class="relative box">
+                        <img class="relative min-w-full" src="./images/loose-img-1.png" alt="#">
+                        <p class="absolute bottom-2 left-[3%] font-sans font-normal text-xl content">€ 5.99</p>
                         <button
-                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
-                        <div
-                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
-                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                            class="absolute btn bottom-2 right-[3%] border-2 font-sans font-normal text-[#bd0004] border-[#bd0004] hover:hidden px-5 py-1">Add</button>
+                        <div class="absolute  top-0 start-0 w-full h-full bg-[#3b3b3b] opacity-0 hover:opacity-90">
+                            <div class="text-center mt-[30%]">
+                                <p class="font-normal font-sans text-white text-xl">Lorem ipsum dolor sit amet.</p>
+                                <p class="font-normal font-sans text-[#f90] text-xl mt-5">€ 5.99</p>
+                                <button
+                                    class="font-normal font-sans text-base text-white bg-[#bd0004] px-8 mt-9 py-2">Add</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/5">
-                    <div class="box relative h-[270px] w-[300px] flex">
-                        <img  src="./images/loose-img-1.png" alt="jewellery">
-                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                <div class="w-1/2 sm:w-1/3 lg:w-1/5 pr-4">
+                    <div class="relative box">
+                        <img class="relative min-w-full" src="./images/loose-img-1.png" alt="#">
+                        <p class="absolute bottom-2 left-[3%] font-sans font-normal text-xl content">€ 5.99</p>
                         <button
-                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
-                        <div
-                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
-                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                            class="absolute btn bottom-2 right-[3%] border-2 font-sans font-normal text-[#bd0004] border-[#bd0004] hover:hidden px-5 py-1">Add</button>
+                        <div class="absolute  top-0 start-0 w-full h-full bg-[#3b3b3b] opacity-0 hover:opacity-90">
+                            <div class="text-center mt-[30%]">
+                                <p class="font-normal font-sans text-white text-xl">Lorem ipsum dolor sit amet.</p>
+                                <p class="font-normal font-sans text-[#f90] text-xl mt-5">€ 5.99</p>
+                                <button
+                                    class="font-normal font-sans text-base text-white bg-[#bd0004] px-8 mt-9 py-2">Add</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/5 pb-6">
-                    <div class="box relative h-[270px] w-[300px] flex">
-                        <img  src="./images/loose-img-1.png" alt="jewellery">
-                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                <div class="w-1/2 sm:w-1/3 lg:w-1/5 pr-4">
+                    <div class="relative box">
+                        <img class="relative min-w-full" src="./images/loose-img-1.png" alt="#">
+                        <p class="absolute bottom-2 left-[3%] font-sans font-normal text-xl content">€ 5.99</p>
                         <button
-                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
-                        <div
-                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
-                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                            class="absolute btn bottom-2 right-[3%] border-2 font-sans font-normal text-[#bd0004] border-[#bd0004] hover:hidden px-5 py-1">Add</button>
+                        <div class="absolute  top-0 start-0 w-full h-full bg-[#3b3b3b] opacity-0 hover:opacity-90">
+                            <div class="text-center mt-[30%]">
+                                <p class="font-normal font-sans text-white text-xl">Lorem ipsum dolor sit amet.</p>
+                                <p class="font-normal font-sans text-[#f90] text-xl mt-5">€ 5.99</p>
+                                <button
+                                    class="font-normal font-sans text-base text-white bg-[#bd0004] px-8 mt-9 py-2">Add</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/5 pb-6">
-                    <div class="box relative h-[270px] w-[300px] flex">
-                        <img  src="./images/loose-img-1.png" alt="jewellery">
-                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                <div class="w-1/2 sm:w-1/3 lg:w-1/5 pr-4 pt-5">
+                    <div class="relative box">
+                        <img class="relative min-w-full" src="./images/loose-img-1.png" alt="#">
+                        <p class="absolute bottom-2 left-[3%] font-sans font-normal text-xl content">€ 5.99</p>
                         <button
-                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
-                        <div
-                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
-                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                            class="absolute btn bottom-2 right-[3%] border-2 font-sans font-normal text-[#bd0004] border-[#bd0004] hover:hidden px-5 py-1">Add</button>
+                        <div class="absolute  top-0 start-0 w-full h-full bg-[#3b3b3b] opacity-0 hover:opacity-90">
+                            <div class="text-center mt-[30%]">
+                                <p class="font-normal font-sans text-white text-xl">Lorem ipsum dolor sit amet.</p>
+                                <p class="font-normal font-sans text-[#f90] text-xl mt-5">€ 5.99</p>
+                                <button
+                                    class="font-normal font-sans text-base text-white bg-[#bd0004] px-8 mt-9 py-2">Add</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/5 pb-6">
-                    <div class="box relative h-[270px] w-[300px] flex">
-                        <img  src="./images/loose-img-1.png" alt="jewellery">
-                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                <div class="w-1/2 sm:w-1/3 lg:w-1/5 pr-4 pt-5">
+                    <div class="relative box">
+                        <img class="relative min-w-full" src="./images/loose-img-1.png" alt="#">
+                        <p class="absolute bottom-2 left-[3%] font-sans font-normal text-xl content">€ 5.99</p>
                         <button
-                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
-                        <div
-                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
-                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                            class="absolute btn bottom-2 right-[3%] border-2 font-sans font-normal text-[#bd0004] border-[#bd0004] hover:hidden px-5 py-1">Add</button>
+                        <div class="absolute  top-0 start-0 w-full h-full bg-[#3b3b3b] opacity-0 hover:opacity-90">
+                            <div class="text-center mt-[30%]">
+                                <p class="font-normal font-sans text-white text-xl">Lorem ipsum dolor sit amet.</p>
+                                <p class="font-normal font-sans text-[#f90] text-xl mt-5">€ 5.99</p>
+                                <button
+                                    class="font-normal font-sans text-base text-white bg-[#bd0004] px-8 mt-9 py-2">Add</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/5 pb-6">
-                    <div class="box relative h-[270px] w-[300px] flex">
-                        <img  src="./images/loose-img-1.png" alt="jewellery">
-                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                <div class="w-1/2 sm:w-1/3 lg:w-1/5 pr-4 pt-5">
+                    <div class="relative box">
+                        <img class="relative min-w-full" src="./images/loose-img-1.png" alt="#">
+                        <p class="absolute bottom-2 left-[3%] font-sans font-normal text-xl content">€ 5.99</p>
                         <button
-                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
-                        <div
-                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
-                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                            class="absolute btn bottom-2 right-[3%] border-2 font-sans font-normal text-[#bd0004] border-[#bd0004] hover:hidden px-5 py-1">Add</button>
+                        <div class="absolute  top-0 start-0 w-full h-full bg-[#3b3b3b] opacity-0 hover:opacity-90">
+                            <div class="text-center mt-[30%]">
+                                <p class="font-normal font-sans text-white text-xl">Lorem ipsum dolor sit amet.</p>
+                                <p class="font-normal font-sans text-[#f90] text-xl mt-5">€ 5.99</p>
+                                <button
+                                    class="font-normal font-sans text-base text-white bg-[#bd0004] px-8 mt-9 py-2">Add</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/5 pb-6">
-                    <div class="box relative h-[270px] w-[300px] flex">
-                        <img  src="./images/loose-img-1.png" alt="jewellery">
-                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                <div class="w-1/2 sm:w-1/3 lg:w-1/5 pr-4 pt-5">
+                    <div class="relative box">
+                        <img class="relative min-w-full" src="./images/loose-img-1.png" alt="#">
+                        <p class="absolute bottom-2 left-[3%] font-sans font-normal text-xl content">€ 5.99</p>
                         <button
-                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
-                        <div
-                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
-                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                            class="absolute btn bottom-2 right-[3%] border-2 font-sans font-normal text-[#bd0004] border-[#bd0004] hover:hidden px-5 py-1">Add</button>
+                        <div class="absolute  top-0 start-0 w-full h-full bg-[#3b3b3b] opacity-0 hover:opacity-90">
+                            <div class="text-center mt-[30%]">
+                                <p class="font-normal font-sans text-white text-xl">Lorem ipsum dolor sit amet.</p>
+                                <p class="font-normal font-sans text-[#f90] text-xl mt-5">€ 5.99</p>
+                                <button
+                                    class="font-normal font-sans text-base text-white bg-[#bd0004] px-8 mt-9 py-2">Add</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-1/5 pb-6">
-                    <div class="box relative h-[270px] w-[300px] flex">
-                        <img  src="./images/loose-img-1.png" alt="jewellery">
-                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                <div class="w-1/2 sm:hidden lg:block lg:w-1/5 pr-4 pt-5">
+                    <div class="relative box">
+                        <img class="relative min-w-full" src="./images/loose-img-1.png" alt="#">
+                        <p class="absolute bottom-2 left-[3%] font-sans font-normal text-xl content">€ 5.99</p>
                         <button
-                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
-                        <div
-                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
-                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                            class="absolute btn bottom-2 right-[3%] border-2 font-sans font-normal text-[#bd0004] border-[#bd0004] hover:hidden px-5 py-1">Add</button>
+                        <div class="absolute  top-0 start-0 w-full h-full bg-[#3b3b3b] opacity-0 hover:opacity-90">
+                            <div class="text-center mt-[30%]">
+                                <p class="font-normal font-sans text-white text-xl">Lorem ipsum dolor sit amet.</p>
+                                <p class="font-normal font-sans text-[#f90] text-xl mt-5">€ 5.99</p>
+                                <button
+                                    class="font-normal font-sans text-base text-white bg-[#bd0004] px-8 mt-9 py-2">Add</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
     <!-- section 3 end -->
+    <!-- section 4 start -->
+    <section class="bg-black py-8">
+        <div class="container px-4 mx-auto">
+            <h2 class="text-center text-white text-5xl font-normal">Top Picks</h2>
+            <div class="flex gap-3 py-16">
+                <div class="w-1/5 box relative">
+                    <img class="min-w-full" src="./images/top-picks-1.png" alt="top-picks">
+                    <h2 class="text-white text-center">Lorem Ipsum</h2>
+                    <div class="hover-content  flex items-center justify-center">
+                        <button class="text-black bg-white py-3  px-6">Add</button>
+                    </div>
+                </div>
+                <div class="w-1/5 box relative">
+                    <img class="min-w-full" src="./images/top-picks-1.png" alt="top-picks">
+                    <h2 class="text-white text-center">Lorem Ipsum</h2>
+                    <div class="hover-content  flex items-center justify-center">
+                        <button class="text-black bg-white py-3  px-6">Add</button>
+                    </div>
+                </div>
+                <div class="w-1/5 box relative">
+                    <img class="min-w-full" src="./images/top-picks-1.png" alt="top-picks">
+                    <h2 class="text-white text-center">Lorem Ipsum</h2>
+                    <div class="hover-content  flex items-center justify-center">
+                        <button class="text-black bg-white py-3  px-6">Add</button>
+                    </div>
+                </div>
+                <div class="w-1/5 box relative">
+                    <img class="min-w-full" src="./images/top-picks-1.png" alt="top-picks">
+                    <h2 class="text-white text-center">Lorem Ipsum</h2>
+                    <div class="hover-content  flex items-center justify-center">
+                        <button class="text-black bg-white py-3  px-6">Add</button>
+                    </div>
+                </div>
+                <div class="w-1/5 box relative">
+                    <img class="min-w-full" src="./images/top-picks-1.png" alt="top-picks">
+                    <h2 class="text-white text-center">Lorem Ipsum</h2>
+                    <div class="hover-content  flex items-center justify-center">
+                        <button class="text-black bg-white py-3  px-6">Add</button>
+                    </div>
+                </div>
+                <div class="w-1/5 box relative">
+                    <img class="min-w-full" src="./images/top-picks-1.png" alt="top-picks">
+                    <h2 class="text-white text-center">Lorem Ipsum</h2>
+                    <div class="hover-content  flex items-center justify-center">
+                        <button class="text-black bg-white py-3  px-6">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 4 end -->
+    <script>
+        function openNav() {
+            document.getElementById("Nav").classList.toggle("left-0")
+        }
+    </script>
 </body>
 
 </html>
