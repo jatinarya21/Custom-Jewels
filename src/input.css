@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
+*{
+    transition: all 200ms;
+    scroll-behavior: smooth;
+}
+.card1:hover button{
+    background:#BD0004;
+    color: white;
+}
+.girl-imge-bttn:hover svg path{
+     stroke:white;
+}
+.card-svg:hover svg path, .insta:hover svg path  {
+    fill:#c42729;
+    opacity: 100%;
+    cursor: pointer;
+}
+.insta, .pintrst, .fb, .twiter{
+    cursor: pointer;
+}
+.twiter:hover svg path{
+    fill: #00ACFF;
+    opacity: 100%;
+}
+.fb:hover svg path {
+    fill: #033954;
+    opacity: 100%;
+}
+.pintrst:hover svg path {
+    fill: orangered;
+    opacity: 100%;
+}
