@@ -21,6 +21,9 @@
 .box:hover .btn{
     display: none;
 }
+.overflow-hidden{
+    overflow: hidden !important;
+}
 /* *{
     border: 1px solid red;
 } */
