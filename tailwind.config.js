@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./dist/index.html'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'morning': [idhr font family aegi ]
+      },
+    },
   },
   plugins: [],
 }
