@@ -1,0 +1,174 @@
+<div class="w-1/5 pb-6">
+                    <div class="box relative h-[270px] w-[300px] flex">
+                        <img src="./images/loose-img-1.png" alt="jewellery">
+                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                        <button
+                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
+                        <div
+                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
+                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-1/5 box relative">
+                        <img class="min-w-full" src="./images/top-picks-1.png" alt="top-picks">
+                        <h2 class="text-white text-center">Lorem Ipsum</h2>
+                            <div class="hover-content  flex items-center justify-center">
+                                <button class="text-black bg-white py-3  px-6">Add</button>
+                            </div>
+                    </div>
+
+                    <div class = "w-1/5 box relative">
+                        <img></img>
+                        <button>add me</button>
+                        <div class = "content flex flex items-center justify-center">
+                        <p class ="text-white">Lorem ipsum</p>
+                        </div>
+                        
+
+
+
+
+                        //section 3 //
+                        <section class="py-14">
+        <div class="container mx-auto px-4">
+            <h1 class="text-center text-5xl font-normal pb-16">Loose Charms</h1>
+            <div class="flex flex-wrap">
+                <div class="w-1/5 pb-6">
+                    <div class="box relative h-[270px] w-[300px] flex">
+                        <img class="" src="./images/loose-img-1.png" alt="jewellery">
+                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                        <button
+                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
+                        <div
+                            class="content flex items-center justify-center h-full w-full absolute top-0 ">
+                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/5 pb-6">
+                    <div class="box relative h-[270px] w-[300px] flex">
+                        <img src="./images/loose-img-1.png" alt="jewellery">
+                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                        <button
+                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
+                        <div
+                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
+                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/5 pb-6">
+                    <div class="box relative h-[270px] w-[300px] flex">
+                        <img src="./images/loose-img-1.png" alt="jewellery">
+                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                        <button
+                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
+                        <div
+                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
+                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/5">
+                    <div class="box relative h-[270px] w-[300px] flex">
+                        <img src="./images/loose-img-1.png" alt="jewellery">
+                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                        <button
+                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
+                        <div
+                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
+                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/5 pb-6">
+                    <div class="box relative h-[270px] w-[300px] flex">
+                        <img src="./images/loose-img-1.png" alt="jewellery">
+                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                        <button
+                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
+                        <div
+                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
+                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/5 pb-6">
+                    <div class="box relative h-[270px] w-[300px] flex">
+                        <img src="./images/loose-img-1.png" alt="jewellery">
+                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                        <button
+                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
+                        <div
+                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
+                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/5 pb-6">
+                    <div class="box relative h-[270px] w-[300px] flex">
+                        <img src="./images/loose-img-1.png" alt="jewellery">
+                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                        <button
+                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
+                        <div
+                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
+                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/5 pb-6">
+                    <div class="box relative h-[270px] w-[300px] flex">
+                        <img src="./images/loose-img-1.png" alt="jewellery">
+                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                        <button
+                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
+                        <div
+                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
+                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/5 pb-6">
+                    <div class="box relative h-[270px] w-[300px] flex">
+                        <img src="./images/loose-img-1.png" alt="jewellery">
+                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                        <button
+                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
+                        <div
+                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
+                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/5 pb-6">
+                    <div class="box relative h-[270px] w-[300px] flex">
+                        <img src="./images/loose-img-1.png" alt="jewellery">
+                        <h2 class="absolute bottom-0 ms-3 text-xl">€ 5.99</h2>
+                        <button
+                            class="border-[#BD0004] border-2 text-[#BD0004] py-2 px-6 absolute bottom-0 right-11 text-base">Add</button>
+                        <div
+                            class="content flex flex-col items-center justify-center h-full w-full -translate-x-[9rem]">
+                            <p class=" text-white">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+// section 3 end / /    
+
+
+
+height: 40px;
+    width: 40px;
+    /* background: black; */
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+
+    
